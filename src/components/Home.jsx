@@ -1,0 +1,51 @@
+import React from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { motion } from "framer-motion";
+import Background from './Background';
+import Footer from './Footer';
+
+// Replace with your name
+const name = 'Prashanth';
+
+const Home = () => {
+
+    const ref = useRef(0);
+    const [text, setText] = useState('');
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (ref.current < name.length) {
+                ref.current++;
+                setText((prevText) => prevText + name[ref.current - 1]);
+            }
+        }, 100); // Adjusted for faster typing effect
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className='area relative z-0 bg-black w-screen h-screen'>
+            <ul className="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div className='hero relative h-[calc(100vh)] flex justify-center items-center text-white' id='hero'>
+                <div className='pt-4 h-36 backdrop-blur-sm rounded-3xl'>
+                    <h1 className='text-6xl sm:text-7xl font-extrabold mt-2'>Hi, I'm&nbsp;<span className='text-yellow-200 font-extrabold'>{text}</span></h1>
+                    <p className='mt-3 text-xl'>I am passionate about Software Development and Big Data Analytics.</p>
+					<p className='mt-2 text-lg'>I enjoy working on challenging projects that solve real-world problems.</p>
+                </div>      
+            </div>
+            <Footer/>
+        </div>	
+    );
+}
+
+export default Home;
