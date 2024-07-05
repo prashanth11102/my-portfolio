@@ -1,12 +1,12 @@
 import React, { useRef, useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './Footer';
 
 // Constants for EmailJS (replace with your own)
-const EMAIL_JS_SERVICE_ID = 'service_wasotr5';
-const EMAIL_JS_TEMPLATE_ID = 'template_default'; // Use default template ID
+const EMAIL_JS_SERVICE_ID = 'service_lxq22xh';
+const EMAIL_JS_TEMPLATE_ID = 'template_744q25g'; // Use default template ID
 const EMAIL_JS_USER_ID = 'Wv0WpXI1NqtIcL7GT'; // Replace with your EmailJS user ID
 
 const Contact = () => {
@@ -51,7 +51,7 @@ const Contact = () => {
         EMAIL_JS_TEMPLATE_ID,
         {
           from_name: username,
-          to_name: 'Prashanth Reddy', // Replace with recipient's name
+          to_name: 'Prashanth', // Replace with recipient's name
           reply_to: user_email,
           to_email: 'prasanthreddymaddirala@gmail.com', // Replace with recipient's email
           message: user_message,
