@@ -11,6 +11,7 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications'; 
 import Achievements from './components/Achievements'; 
+import Skills from './components/Skills'; 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,8 +24,10 @@ root.render(
       <Route path='/projects' element={<Projects />} />
       <Route path='/about' element={<About />} />
       <Route path='/contact' element={<Contact />} />
-      <Route path='/certifications' element={<Certifications />} /> {/* Adding Certifications route */}
-      <Route path='/achievements' element={<Achievements />} /> {/* Adding Achievements route */}
+      <Route path='/certifications' element={<Certifications />} /> 
+      <Route path='/achievements' element={<Achievements />} /> 
+      <Route path='/skills' element={<Skills />} />
+      
     </Routes>
     
   </BrowserRouter>

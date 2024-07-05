@@ -31,6 +31,7 @@ const Navbar = () => {
         </div>
         <div className="hidden sm:flex space-x-4 items-center text-l">
           <Link to='/projects'>Projects</Link>
+          <Link to='/skills'>Skills</Link>
           <Link to='/experience'>Experience</Link>
           <Link to='/certifications'>Certifications</Link> 
           <Link to='/achievements'>Achievements</Link> 
