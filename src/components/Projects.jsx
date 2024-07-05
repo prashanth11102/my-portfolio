@@ -5,6 +5,7 @@ import todo from '../assets/todo.webp';
 import dash from '../assets/dash.jpg';  
 import Footer from './Footer';
 
+
 const ProjectCard = ({ image, title, description, git, technologies }) => {
     return (
         <div className="max-w-sm sm:max-w-sm md:max-w-sm bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

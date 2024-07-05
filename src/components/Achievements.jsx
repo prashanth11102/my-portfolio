@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from './Footer';
 
+
 const achievements = [
   { title: 'Institute Merit Scholarship Holder', details: '2022-23 & 2023-24' },
   { title: 'National Cadet Corps (NCC) - C Certificate', details: '2020-23' },

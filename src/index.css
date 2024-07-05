@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 768px) {
+	/* Styles for tablets and smaller */
+  }
+  
+  @media (max-width: 480px) {
+	/* Styles for mobile phones */
+  }
+  
+
 .object-contain{
     transform: scale( 1.7);
     border-radius : 20px
@@ -15,43 +24,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background-color: #000;
 	color: #fff;
-  }
-  
-  
-  
-  /* Media Queries for Tablets and Smaller */
-  @media (max-width: 768px) {
-	.navbar {
-	  flex-direction: column;
-	  text-align: center;
-	}
-  
-	.hero {
-	  padding: 20px;
-	}
-  
-	
-  }
-  
-  /* Media Queries for Mobile Phones */
-  @media (max-width: 480px) {
-	.navbar {
-	  flex-direction: column;
-	  text-align: center;
-	}
-  
-	.hero {
-	  padding: 10px;
-	}
-  
-	h1 {
-	  font-size: 1.5rem;
-	}
-  
-	p {
-	  font-size: 1rem;
-	}
-  
   }
   
 
@@ -222,7 +194,8 @@ body {
 	background-color: #000;
 	color: #fff;
 	font-family: 'Arial', sans-serif;
-	margin-top: 15px;
+	margin-top: 25px;
+	
   }
   
   .skills-content {
@@ -296,6 +269,7 @@ body {
 	position: relative;
 	bottom: 0;
 	width: 100%;
+	margin-top: 25px;
   }
   
  

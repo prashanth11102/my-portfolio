@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* App.css */
+@media (max-width: 768px) {
+	/* Styles for tablets and smaller */
+  }
+  
+  @media (max-width: 480px) {
+	/* Styles for mobile phones */
+  }
+  
 
 
 /* Animations */

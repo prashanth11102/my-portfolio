@@ -5,7 +5,7 @@ import ButtonLink from './ButtonLink';
 import Footer from './Footer';
 
 const ServiceCard = ({ service }) => (
-  <div className='sm:w-[250px] w-full'>
+  <div className='sm:w-[250px] w-full mb-6 mt-0'>
     <div className='w-full green-pink-gradient p-[1px] rounded-[20px]'>
       <div className='rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col' style={{ background: '#151030' }}>
         <img src={service.icon} alt='some_icon' className='w-16 h-16 object-contain' />
@@ -17,26 +17,21 @@ const ServiceCard = ({ service }) => (
 
 const About = () => {
   return (
-    <div className='area'>
-      <ul className='circles'>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <ul className='boxes'>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+    <div className='relative'>
+      <div className='area'>
+        <ul className='circles'>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <div className='content'>
         <div className='bg-black h-full w-full text-white sm:flex sm:justify-around about py-12 mt-8 overflow-x-hidden' id='about'>
           <div className='flex flex-col justify-around'>
@@ -54,14 +49,14 @@ const About = () => {
               <ButtonLink url='https://drive.google.com/file/d/1NCr74QmdUGsH_HvGcK4P4z6qdrMelok2/view?usp=drive_link' text='View Resume →' padding={`p-3`} />
             </div>
             <div className='mt-20 flex justify-center flex-wrap gap-7'>
-              {services.map((service) => (
-                <ServiceCard key={service.title} service={service} />
+              {services.map((service, index) => (
+                <ServiceCard service={service} key={index} />
               ))}
             </div>
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

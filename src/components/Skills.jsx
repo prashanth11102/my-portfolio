@@ -4,6 +4,7 @@ import { Parallax } from 'react-parallax';
 import Footer from './Footer';
 import '../index.css';
 
+
 const skills = [
   { title: 'Data Science', icon: FaDna },
   { title: 'Power BI', icon: FaChartBar },
