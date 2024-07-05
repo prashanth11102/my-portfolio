@@ -21,19 +21,21 @@ const Achievements = () => {
   return (
     <div className="bg-black min-h-screen pt-8">
       <div className="container mx-auto py-12 px-8">
-    
+      <div className="text mb-6">
+          <p className="font-light text-l text-white">MY MAJOR ACHIEVEMENTS SO FAR.</p>
+        </div>
         <div className="relative">
-          <div className="absolute border-r-4 border-blue-500 h-full left-1/2 transform -translate-x-1/2"></div>
+          <div className="absolute border-r-4 border-white-500 h-full left-1/2 transform -translate-x-1/2"></div>
           {achievements.map((ach, index) => (
             <div
               key={index}
-              className={`mb-8 flex justify-${index % 2 === 0 ? 'start' : 'end'} items-center w-full`}
+              className={`mb-4 flex justify-${index % 2 === 0 ? 'start' : 'end'} items-center w-full`}
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
               <div className={`w-1/2 ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
                 <div
-                  className="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-blue-500 relative transform hover:scale-105 transition duration-300 ease-in-out"
+                  className="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-white-500 relative transform hover:scale-105 transition duration-300 ease-in-out"
                   style={{ left: index % 2 === 0 ? '0' : 'auto', right: index % 2 !== 0 ? '0' : 'auto' }}
                 >
                   <div className="flex items-center mb-4">

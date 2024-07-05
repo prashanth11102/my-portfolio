@@ -81,9 +81,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="relative z-0 bg-black w-screen h-screen mt-12">
-      <div className="text-white contact overflow-x-hidden pt-12 mt-8" id="contact">
-        <div className="z-10 w-full sm:w-[650px] m-auto p-8 rounded-2xl">
+    <div className="relative z-0 w-full min-h-screen bg-black">
+      <div className="text-white contact overflow-hidden pt-12 mt-8 w-full h-full flex items-center justify-center" id="contact">
+        <div className="z-10 w-full sm:w-[650px] p-8 rounded-2xl bg-black">
           <p className="font-light">REACH OUT TO ME</p>
           <h2 className="text-5xl font-extrabold mt-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-pink-500">
             Contact.
@@ -97,7 +97,7 @@ const Contact = () => {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="Enter your name"
-                className="py-4 px-6 rounded-lg outline-none border-none font-medium bg-gray-900"
+                className="py-4 px-6 rounded-lg outline-none border-none font-medium bg-gray-900 text-white"
                 required
               />
             </label>
@@ -109,7 +109,7 @@ const Contact = () => {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="Ex: abc@gmail.com"
-                className="py-4 px-6 rounded-lg font-medium bg-gray-900"
+                className="py-4 px-6 rounded-lg font-medium bg-gray-900 text-white"
                 required
               />
             </label>
@@ -121,16 +121,16 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="Do you have anything to say?"
-                className="py-4 px-6 rounded-lg outline-none border-none font-medium bg-gray-900"
+                className="py-4 px-6 rounded-lg outline-none border-none font-medium bg-gray-900 text-white"
                 required
               />
             </label>
 
             <button
               type="submit"
-              className="pt-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md bg-gray-900"
+              className="py-2 px-4 rounded-xl outline-none w-fit font-bold shadow-md bg-gradient-to-r from-gray-500 to-pink-500 text-white"
             >
-              {loading ? 'Sending...' : 'Send'}
+              {loading ? 'Sending...' : 'Submit'}
             </button>
           </form>
         </div>

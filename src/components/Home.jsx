@@ -22,7 +22,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className='area relative z-0 bg-black w-screen h-screen'>
+        <div className='area relative z-0 bg-black w-screen h-screen flex flex-col justify-between'>
             <ul className="circles">
                 <li></li>
                 <li></li>
@@ -35,15 +35,25 @@ const Home = () => {
                 <li></li>
                 <li></li>
             </ul>
-            <div className='hero relative h-[calc(100vh)] flex justify-center items-center text-white' id='hero'>
+            <ul className="boxes">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div className='hero flex-grow flex flex-col justify-center items-center text-white' id='hero'>
                 <div className='pt-4 h-36 backdrop-blur-sm rounded-3xl'>
-                    <h1 className='text-6xl sm:text-7xl font-extrabold mt-2'>Hi, I'm&nbsp;<span className='text-yellow-200 font-extrabold'>{text}</span></h1>
+                    <h1 className='text-6xl sm:text-7xl font-extrabold mt-2'>Hi, I'm&nbsp;<span className='text-blue-200 font-extrabold'>{text}</span></h1>
+                </div>
+                <div className='w-full flex flex-col justify-center items-center mt-6'>
+                    <p className='text-4xl font-bold mb-1'>Welcome to my portfolio</p>
                     <p className='mt-3 text-xl'>I am passionate about Software Development and Big Data Analytics.</p>
-					<p className='mt-2 text-lg'>I enjoy working on challenging projects that solve real-world problems.</p>
-                </div>      
+                    <p className='mt-2 text-lg'>I enjoy working on challenging projects that solve real-world problems.</p>
+                </div>
             </div>
-            <Footer/>
-        </div>	
+            <Footer />
+        </div>
     );
 }
 

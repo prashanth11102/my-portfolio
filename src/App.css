@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/*Start Animations*/
+/* Start Animations */
 @-webkit-keyframes animatetop {
 	from {
 		top: -300px;
@@ -44,13 +44,22 @@
 	}
 }
 
+/* Updated background and circle animations */
 .area {
 	background: #000;
-	background: -webkit-linear-gradient(to left, #000, #000);
+	background: -webkit-linear-gradient(to left, #000000, #0f0f0f);
+	background: linear-gradient(to left, #000000, #0f0f0f);
 	width: 100%;
 	height: 100vh;
 	position: absolute;
 	z-index: -1;
+	overflow: hidden;
+}
+
+@keyframes gradient {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
 }
 
 .circles {
@@ -58,8 +67,9 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 96%;
+	height: 100%;
 	overflow: hidden;
+	z-index: 0;
 }
 
 .circles li {
@@ -69,7 +79,7 @@
 	width: 20px;
 	height: 20px;
 	background: rgba(255, 255, 255, 0.2);
-	animation: animate 25s linear infinite;
+	animation: animate 25s linear infinite, colorChange 10s linear infinite;
 	bottom: -150px;
 }
 
@@ -154,10 +164,95 @@
 		opacity: 1;
 		border-radius: 0;
 	}
-
 	100% {
 		transform: translateY(-1000px) rotate(720deg);
 		opacity: 0;
 		border-radius: 50%;
 	}
+}
+
+@keyframes colorChange {
+	0% { background: rgba(255, 255, 255, 0.2); }
+	25% { background: rgba(255, 0, 0, 0.4); }
+	50% { background: rgba(0, 255, 0, 0.4); }
+	75% { background: rgba(0, 0, 255, 0.4); }
+	100% { background: rgba(255, 255, 255, 0.2); }
+}
+
+/* Additional colorful boxes */
+.boxes {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.boxes li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 30px;
+	height: 30px;
+	background: rgba(255, 255, 255, 0.3);
+	animation: animateBoxes 20s linear infinite, colorChangeBoxes 15s linear infinite;
+	bottom: -150px;
+}
+
+.boxes li:nth-child(1) {
+	left: 20%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 1s;
+}
+
+.boxes li:nth-child(2) {
+	left: 40%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 3s;
+	animation-duration: 14s;
+}
+
+.boxes li:nth-child(3) {
+	left: 60%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 5s;
+}
+
+.boxes li:nth-child(4) {
+	left: 80%;
+	width: 50px;
+	height: 50px;
+	animation-delay: 7s;
+	animation-duration: 16s;
+}
+
+.boxes li:nth-child(5) {
+	left: 30%;
+	width: 70px;
+	height: 70px;
+	animation-delay: 9s;
+}
+
+@keyframes animateBoxes {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-1200px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+@keyframes colorChangeBoxes {
+	0% { background: rgba(255, 255, 255, 0.3); }
+	25% { background: rgba(255, 69, 0, 0.4); }
+	50% { background: rgba(50, 205, 50, 0.4); }
+	75% { background: rgba(30, 144, 255, 0.4); }
+	100% { background: rgba(255, 255, 255, 0.3); }
 }
