@@ -62,7 +62,7 @@ export const experiences = [
         'points': [
             'Participated in various training camps and activities.',
             'Developed leadership, discipline, and team-building skills.',
-            'Received the NCC \'C\' Certificate for outstanding performance.'
+            'Received the NCC \'C\' Certificate successfully.'
         ],
         'url': 'https://example.com/ncc', // Replace with actual URL if available
     },
@@ -73,7 +73,6 @@ export const experiences = [
         'logo': aasya,
         'points': [
             'Provided educational support to underprivileged children.',
-            'Organized extracurricular activities and workshops.',
             'Contributed to the foundation\'s initiatives to empower the community.',
             'Learned the value of giving back to society, empathy, and compassion.',
             'Developed skills in teaching, teamwork, and cultural sensitivity.'
@@ -116,7 +115,6 @@ export const experiences = [
         'points': [
             'Participated in photography workshops and competitions.',
             'Organized photography exhibitions and events.',
-            'Promoted the art of photography.',
             'Learned about different photography techniques and styles.',
             'Developed skills in creative expression, technical expertise, and community engagement.'
         ],

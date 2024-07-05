@@ -33,7 +33,7 @@ const About = () => {
         <div className='sm:px-16 px-2'>
           <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Introduction</h2>
           <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>
-    👨‍💻 Hi, This is Prashanth Reddy, a 2024 graduate🎓 from National Institute of Technology. <br/>
+    👨‍💻 Hi, This is Prashanth Reddy, a 2024 graduate 🎓 from National Institute of Technology. <br/>
     I am eager to 🚀 launch my career in Data Science and Software Development roles.<br/>
     My academic background and hands-on project experience have equipped me with a versatile skill set, allowing me to bring 💡 fresh ideas and a strong work ethic to any dynamic team.<br/>
     Driven by a passion for applying technology to solve 🌍 real-world problems and a desire to contribute to backend solutions and 📊 data-driven decision making. <br/>
