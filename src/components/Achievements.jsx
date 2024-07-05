@@ -19,9 +19,9 @@ const Achievements = () => {
   }, []);
 
   return (
-    <div className="bg-black min-h-screen">
-      <div className="container mx-auto py-12 px-6">
-        <h1 className="text-5xl font-bold mb-8 text-center text-white" data-aos="fade-up"></h1>
+    <div className="bg-black min-h-screen pt-8">
+      <div className="container mx-auto py-12 px-8">
+    
         <div className="relative">
           <div className="absolute border-r-4 border-blue-500 h-full left-1/2 transform -translate-x-1/2"></div>
           {achievements.map((ach, index) => (

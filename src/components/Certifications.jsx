@@ -26,9 +26,8 @@ const Certifications = () => {
   }, []);
 
   return (
-    <div className="bg-black min-h-screen">
-      <div className="container mx-auto py-14 px-6">
-        <h1 className="text-5xl mb-8 text-center text-white" data-aos="fade-down"></h1>
+    <div className="bg-black min-h-screen pt-8">
+      <div className="container mx-auto py-14 px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certifications.map((cert, index) => (
             <ScrollLink

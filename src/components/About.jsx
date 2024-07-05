@@ -39,8 +39,9 @@ const About = () => {
     Driven by a passion for applying technology to solve 🌍 real-world problems and a desire to contribute to backend solutions and 📊 data-driven decision making. <br/>
     Committed to 📚 continuous learning, innovation, and 🤝 collaboration.<br/>
     Outside of tech, I love travelling and 📸 photography is my creative outlet, allowing me to capture and share meaningful moments. <br/>
-    <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/prashanth-reddy-a8a304201/' target='_blank'>LinkedIn</a><br/>
-    <a className='text-purple-300 hover:text-purple-400 duration-300' href='' target='_blank'></a>
+    <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/prashanth-reddy-a8a304201/' rel="noreferrer" target='_blank'>LinkedIn</a><br/>
+ 
+
 </p>
 
            

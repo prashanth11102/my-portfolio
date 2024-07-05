@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications'; // Importing Certifications
 import Achievements from './components/Achievements'; // Importing Achievements
-import Footer from './components/Footer';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
