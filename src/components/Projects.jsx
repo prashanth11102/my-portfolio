@@ -3,6 +3,8 @@ import food from '../assets/food.png';
 import plant from '../assets/plant.jpeg'; 
 import todo from '../assets/todo.webp'; 
 import dash from '../assets/dash.jpg';  
+import database from '../assets/database.jpg'; 
+import weather from '../assets/weather.jpg'; 
 import Footer from './Footer';
 
 
@@ -61,6 +63,20 @@ const Projects = () => {
             image: dash,  
             git: 'https://github.com/prashanth11102/personal-finance-dashboard',
             technologies: ['Power BI', 'DAX']
+        },
+        { 
+            title: 'Weather Application',
+            description: 'Responsive web application to fetch and display real-time weather information based on user location or input, with dynamic updates from an API.',
+            image: weather,  
+            git: 'https://github.com/prashanth11102/weather-app',
+            technologies: ['HTML', 'CSS', 'JS']
+        },
+        {
+            title: 'Database Design',
+            description: 'Normalized Hospital database with ER diagrams and relational schemas for efficient data storage and retrieval using MySQL.',
+            image: database,  
+            git: 'https://github.com/prashanth11102/personal-finance-dashboard',
+            technologies: ['MySQL']
         }
     ];
 

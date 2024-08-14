@@ -44,9 +44,9 @@ const About = () => {
                 Driven by a passion for applying technology to solve 🌍 real-world problems and a desire to contribute to backend solutions and 📊 data-driven decision making. <br/>
                 Committed to 📚 continuous learning, innovation, and 🤝 collaboration.<br/>
                 Outside of tech, I love travelling and 📸 photography is my creative outlet, allowing me to capture and share meaningful moments. <br/>
-                <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/prashanth-reddy-a8a304201/' rel="noreferrer" target='_blank'>LinkedIn</a><br/>
+                <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/prashanth-reddy-a8a304201/' rel="noreferrer" target='_blank'>My LinkedIn Profile</a><br/>
               </p>
-              <ButtonLink url='https://drive.google.com/file/d/1NCr74QmdUGsH_HvGcK4P4z6qdrMelok2/view?usp=drive_link' text='View Resume →' padding={`p-3`} />
+              <ButtonLink url='https://drive.google.com/file/d/1aJCB9VpboyIt2QqKlVU71euQlh4Ak8uI/view?usp=drive_link' text='View Resume →' padding={`p-3`} />
             </div>
             <div className='mt-20 flex justify-center flex-wrap gap-7'>
               {services.map((service, index) => (
